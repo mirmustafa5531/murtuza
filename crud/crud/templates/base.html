@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Uwe Ticket Booking System </title>
+    <link
+      rel="shortcut icon"
+      href="crud\static\images\title-logo.png"
+      type="image/x-icon"
+    />
+
+    <!-- ----linked font -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    
+    <!-- ----linked style.css file---- -->
+    <link rel="stylesheet" href="{% static 'crud\static\bootstrap.min.css' %}"/>
+    <script src = "{% static 'crud\static\bootstrap.min.js' % }"></script>
+ </head>
+  <body>
+    {% include 'navbar.html' %}
+    <div class = "container mt-5">
+        <h2 class = "text-center alert alert-danger"> UWE TICKET BOOKING SYSTEM</h2>
+        {% block content%} {% endblock content%}
+    </div>
+
+  </body>
+
+
+
+</html>
